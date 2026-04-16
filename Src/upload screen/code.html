@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blueprint Lab | Expert Library</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#4459a8",
+                        "on-background": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "secondary-fixed-dim": "#b7c4ff",
+                        "secondary-fixed": "#dde1ff",
+                        "tertiary": "#952200",
+                        "on-tertiary-fixed-variant": "#891e00",
+                        "on-tertiary-fixed": "#3c0800",
+                        "outline": "#737688",
+                        "on-surface-variant": "#434656",
+                        "on-secondary-fixed-variant": "#2b418f",
+                        "on-primary-fixed": "#001452",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#ffddd5",
+                        "inverse-surface": "#2e3132",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#001452",
+                        "tertiary-fixed": "#ffdbd2",
+                        "surface-bright": "#f8f9fa",
+                        "primary": "#003ec7",
+                        "on-primary-fixed-variant": "#0038b6",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-container": "#95aafe",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-tint": "#004ced",
+                        "tertiary-container": "#bf3003",
+                        "outline-variant": "#c3c5d9",
+                        "on-secondary-container": "#253b89",
+                        "primary-container": "#0052ff",
+                        "surface-container": "#edeeef",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "surface-dim": "#d9dadb",
+                        "on-surface": "#191c1d",
+                        "on-primary-container": "#dfe3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-low": "#f3f4f5",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dde1ff",
+                        "inverse-primary": "#b7c4ff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .technical-gradient {
+            background: linear-gradient(135deg, #003ec7 0%, #0052ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<div class="flex h-screen overflow-hidden">
+<aside class="hidden md:flex flex-col h-full w-64 bg-slate-50 dark:bg-slate-900 p-4 space-y-6 shrink-0">
+<div class="flex items-center gap-3 px-2">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<div>
+<h2 class="text-blue-700 dark:text-blue-500 font-bold font-headline leading-tight">The Blueprint</h2>
+<p class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold text-slate-500">Technical Precision</p>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<p class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold text-slate-400 px-2 pb-2">Main Navigation</p>
+<a class="flex items-center gap-3 px-3 py-2.5 bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 scale-[1.02] shadow-sm rounded-md transition-all ease-in-out" href="#">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="font-medium">Library</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 opacity-70 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined text-lg">psychology</span>
+<span class="font-medium">Community</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-600 dark:text-slate-400 opacity-70 hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined text-lg">account_circle</span>
+<span class="font-medium">Profile</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full py-3 technical-gradient text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg active:scale-95 duration-200">
+<span class="material-symbols-outlined text-lg">cloud_upload</span>
+                    Upload Module
+                </button>
+</div>
+<div class="space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 opacity-70 text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+<span>Documentation</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 opacity-70 text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined text-lg">contact_support</span>
+<span>Support</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto relative flex flex-col">
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-6 py-3 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-8 flex-1">
+<span class="font-['Space_Grotesk'] font-bold text-2xl tracking-tighter text-blue-700 dark:text-blue-500 md:hidden">Blueprint</span>
+<div class="relative max-w-xl w-full hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-sm focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search technical blueprints, modules, or assets..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="professional portrait of an engineering lead with glasses and a friendly expression in a modern office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6RmEbia5tuUodCF1wOo8a5Enq31F-1fMpv9zBUJzw_nDNYsT9LFkUxAQ9krRkUqltyRSqn7ubf2YOCUI94O_2f2LT8SyofIB4Ui6tUneJNqpyGZ3guT4xYHG5pOL1zOSrZ0q53-BTShxntVa4NRSh7451yYYRfvAp-vP05vuIbnCk5TEnqVYqd7V-FFrmVGEGIpMm95uRZ-SQWiH8_TZqz6NIFmDka0cqrZPXGAFzr6miu_KD5ZMA_MWEeE3Jo5lZBwEjpvhU66M"/>
+</div>
+</div>
+</div>
+</header>
+<div class="p-6 md:p-10 max-w-[1440px] mx-auto w-full space-y-12">
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<h1 class="text-5xl font-headline font-bold tracking-tight text-on-surface">The 'Bones' Library</h1>
+<p class="text-on-surface-variant max-w-xl text-lg">Central hub for high-fidelity technical modules. Verified contributions and expert schemas.</p>
+</div>
+<button class="flex items-center gap-3 px-8 py-4 technical-gradient text-white rounded-xl font-bold shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Verified Upload
+                    </button>
+</section>
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-headline font-bold">My Contributions</h2>
+<a class="text-primary text-sm font-semibold hover:underline" href="#">View All History</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm group hover:scale-[1.01] transition-all border-b-4 border-primary">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<span class="bg-green-100 text-green-700 px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Live</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2">Pneumatic Logic Gates</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Complete assembly schema for industrial automated logic systems using low-pressure air flows.</p>
+<div class="flex items-center gap-4 text-xs font-label text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">visibility</span> 1.2k</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">download</span> 450</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 2d ago</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm group hover:scale-[1.01] transition-all border-b-4 border-secondary">
+<div class="flex justify-between items-start mb-6">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Pending Review</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2">Solid State Rectifier</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-4">Advanced cooling manifold design for high-voltage power conversion modules in renewable grids.</p>
+<div class="flex items-center gap-4 text-xs font-label text-slate-400">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">visibility</span> 0</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">download</span> 0</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 1h ago</span>
+</div>
+</div>
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant flex flex-col items-center justify-center p-6 rounded-xl opacity-60 hover:opacity-100 transition-opacity group cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-outline">add</span>
+</div>
+<p class="font-bold text-sm">Contribute New Blueprint</p>
+</div>
+</div>
+</section>
+<section class="space-y-8">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-surface-container-highest pb-6">
+<div class="flex items-center gap-6 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0">
+<button class="whitespace-nowrap text-primary font-bold border-b-2 border-primary pb-2 px-1">All Assets</button>
+<button class="whitespace-nowrap text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-2 px-1">Mechanical</button>
+<button class="whitespace-nowrap text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-2 px-1">Electrical</button>
+<button class="whitespace-nowrap text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-2 px-1">Structural</button>
+<button class="whitespace-nowrap text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-2 px-1">Firmware</button>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">filter_list</span>
+                                Filters
+                            </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-lg text-sm font-semibold">
+<span class="material-symbols-outlined text-lg">swap_vert</span>
+                                Sort
+                            </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="h-48 relative">
+<img alt="Technical Schema" class="w-full h-full object-cover" data-alt="close-up of complex mechanical engineering blueprint with precise drafting lines and technical annotations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgxBQUw2QmAKjXKPslRHxRUWi0pnk9xnR5NtGysWA4NAisoTPCYmtaadiYcKiBVwRuA-bvHmNqavwSui3Y7aQtKDAQSJh2mTSRI22JETmweACNhU7HOkYKNkmyoOpPNJ-wuiIBSyMctJ5a_tZ2AOqT6TVhla1ejoQERf39sf0z9hanteGELnVQvD4_BIBl3lTwL8tKl5xh_kllIAxnvlhJgEY7G0lW74jepcx2ctf45I-0pkARGoo8VS2a_GmtUrqwfQE_54NYomA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<span class="bg-primary px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Verified Expert</span>
+</div>
+</div>
+<div class="p-5 space-y-3">
+<h4 class="font-bold text-lg font-headline">Turbine Fin Assembly v4.2</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">Optimized geometry for high-efficiency airflow in domestic wind power generators.</p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-slate-200 flex items-center justify-center text-[10px] font-bold">JD</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-slate-300 flex items-center justify-center text-[10px] font-bold">AS</div>
+</div>
+<button class="text-primary font-bold text-sm flex items-center gap-1">
+                                                View Spec <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="h-48 relative">
+<img alt="Circuitry Design" class="w-full h-full object-cover" data-alt="clean overhead view of a green printed circuit board with glowing copper paths and microchips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ei_fYbPyHWNYpw0fPoRdZkCQJoM0-LNtw7ogvBhtjxxENGksK9feWhV6RsG0RXBi6WPIMBMdz3oXA3raYSHsgqJhDg9sgDoSm_GsCEPeBiSUUMBb3K2FF_alebh5y0blmeyPyUE3jYGme_ZtMmcG0IWEFWqkM8MKg2z8RkA9pMHlgmvdJm_ubz2mT8RVLLqSCPunOCV01bawjnctpD_itn36h9x122EzzTrIG-SX-VyM3oR0wjIPYdlDMhO8EJ9gfsVMmS16CkE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<span class="bg-secondary px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Community Choice</span>
+</div>
+</div>
+<div class="p-5 space-y-3">
+<h4 class="font-bold text-lg font-headline">Low-Noise Pre-Amp PCB</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">Ultra-clean signal path for analog-to-digital sensor conversion interfaces.</p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-slate-200 flex items-center justify-center text-[10px] font-bold">RK</div>
+</div>
+<button class="text-primary font-bold text-sm flex items-center gap-1">
+                                                View Spec <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 space-y-8">
+<div class="bg-surface-container-low p-8 rounded-2xl relative overflow-hidden">
+<div class="relative z-10 space-y-4">
+<h3 class="font-headline font-bold text-2xl">Contribution Leaderboard</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center font-bold text-primary">1</div>
+<span class="font-semibold">Dr. Aris Thorne</span>
+</div>
+<span class="text-xs font-bold text-primary">42 Assets</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest/50 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center font-bold">2</div>
+<span class="font-semibold">Sarah Jenkins</span>
+</div>
+<span class="text-xs font-bold">28 Assets</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest/50 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-slate-100 flex items-center justify-center font-bold">3</div>
+<span class="font-semibold">You</span>
+</div>
+<span class="text-xs font-bold">14 Assets</span>
+</div>
+</div>
+<button class="w-full py-3 bg-on-surface text-surface rounded-xl font-bold text-sm uppercase tracking-widest transition-transform active:scale-95">
+                                        Join Challenge
+                                    </button>
+</div>
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline font-bold text-lg">Requested Blueprints</h3>
+<div class="p-4 bg-tertiary-fixed rounded-xl border-l-4 border-tertiary">
+<div class="flex justify-between items-start mb-2">
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-tertiary-fixed-variant">Urgent Priority</span>
+<span class="text-xs font-bold text-on-tertiary-fixed">$250 Bounty</span>
+</div>
+<h4 class="font-bold text-on-tertiary-fixed">Vertical Axis Stabilizer</h4>
+<p class="text-xs text-on-tertiary-fixed-variant mt-1">Needed for high-altitude UAV research projects. Focus on weight-to-torque ratios.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+<div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+<div class="w-full md:w-1/3 technical-gradient p-8 text-white flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h2 class="text-3xl font-headline font-bold leading-tight">Contribute Expert Asset</h2>
+<p class="text-white/80 mt-4 text-sm">Your technical contribution will be peer-reviewed and indexed for the global engineering community.</p>
+</div>
+<div class="hidden md:block">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-60">Verified Authority</p>
+</div>
+</div>
+<div class="flex-1 p-8">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-xl font-bold font-headline">Technical Specs</h3>
+<button class="text-slate-400 hover:text-on-surface">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="space-y-5">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Module Title</label>
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-2 focus:border-primary focus:ring-0 transition-all" placeholder="e.g., Hydraulic Actuator v2.1" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Description</label>
+<textarea class="w-full border-0 border-b border-outline-variant bg-transparent py-2 focus:border-primary focus:ring-0 transition-all resize-none" placeholder="Briefly explain the engineering application..." rows="2"></textarea>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Discipline</label>
+<select class="w-full border-0 border-b border-outline-variant bg-transparent py-2 focus:border-primary focus:ring-0 transition-all text-sm">
+<option>Mechanical</option>
+<option>Electrical</option>
+<option>Software</option>
+<option>Systems</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">License</label>
+<select class="w-full border-0 border-b border-outline-variant bg-transparent py-2 focus:border-primary focus:ring-0 transition-all text-sm">
+<option>MIT Open</option>
+<option>Attribution 4.0</option>
+<option>Non-Commercial</option>
+</select>
+</div>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center bg-surface-container-low group cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-3xl text-slate-400 mb-2 group-hover:text-primary transition-colors">upload_file</span>
+<p class="text-xs font-bold text-slate-500">Drag &amp; Drop Technical Files (.cad, .sch, .pdf)</p>
+<p class="text-[10px] text-slate-400 mt-1">Max file size: 500MB</p>
+</div>
+<div class="pt-4 flex gap-4">
+<button class="flex-1 py-3 bg-surface-container-high text-on-surface-variant rounded-xl font-bold text-sm active:scale-95 transition-transform" type="button">Cancel</button>
+<button class="flex-[2] py-3 technical-gradient text-white rounded-xl font-bold text-sm shadow-lg active:scale-95 transition-transform" type="submit">Publish Verified Asset</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body></html>

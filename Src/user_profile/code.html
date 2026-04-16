@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profile | Project BluePrint</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#4459a8",
+                        "on-background": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "secondary-fixed-dim": "#b7c4ff",
+                        "secondary-fixed": "#dde1ff",
+                        "tertiary": "#952200",
+                        "on-tertiary-fixed-variant": "#891e00",
+                        "on-tertiary-fixed": "#3c0800",
+                        "outline": "#737688",
+                        "on-surface-variant": "#434656",
+                        "on-secondary-fixed-variant": "#2b418f",
+                        "on-primary-fixed": "#001452",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#ffddd5",
+                        "inverse-surface": "#2e3132",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#001452",
+                        "tertiary-fixed": "#ffdbd2",
+                        "surface-bright": "#f8f9fa",
+                        "primary": "#003ec7",
+                        "on-primary-fixed-variant": "#0038b6",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-container": "#95aafe",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-tint": "#004ced",
+                        "tertiary-container": "#bf3003",
+                        "outline-variant": "#c3c5d9",
+                        "on-secondary-container": "#253b89",
+                        "primary-container": "#0052ff",
+                        "surface-container": "#edeeef",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "surface-dim": "#d9dadb",
+                        "on-surface": "#191c1d",
+                        "on-primary-container": "#dfe3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-low": "#f3f4f5",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dde1ff",
+                        "inverse-primary": "#b7c4ff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bg-blueprint-gradient {
+            background: linear-gradient(135deg, #003ec7 0%, #0052ff 100%);
+        }
+        .no-line-boundary {
+            border: none !important;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body min-h-screen flex">
+<!-- SideNavBar Anchor -->
+<aside class="h-screen w-64 bg-slate-50 dark:bg-slate-900 flex flex-col p-4 space-y-6 shrink-0 sticky top-0">
+<div class="flex flex-col space-y-1 mb-4">
+<span class="text-blue-700 dark:text-blue-500 font-bold font-headline text-xl tracking-tight">The Blueprint</span>
+<span class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold text-slate-500">Technical Precision</span>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center space-x-3 p-3 transition-transform duration-200 hover:translate-x-1 text-slate-600 dark:text-slate-400 opacity-70" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold">Library</span>
+</a>
+<a class="flex items-center space-x-3 p-3 transition-transform duration-200 hover:translate-x-1 text-slate-600 dark:text-slate-400 opacity-70" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold">Community</span>
+</a>
+<a class="flex items-center space-x-3 p-3 transition-all ease-in-out bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-400 scale-[1.02] shadow-sm rounded-md" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest font-bold">Profile</span>
+</a>
+</nav>
+<div class="space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full bg-blueprint-gradient text-white py-3 rounded shadow-lg font-headline text-sm font-bold tracking-wide transition-all active:scale-95">
+                Upload Module
+            </button>
+<div class="flex flex-col space-y-2">
+<a class="flex items-center space-x-3 px-3 py-2 text-slate-600 hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+<span class="font-['Space_Grotesk'] uppercase text-[9px] tracking-widest font-bold">Documentation</span>
+</a>
+<a class="flex items-center space-x-3 px-3 py-2 text-slate-600 hover:text-blue-600" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="contact_support">contact_support</span>
+<span class="font-['Space_Grotesk'] uppercase text-[9px] tracking-widest font-bold">Support</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto">
+<!-- TopNavBar Anchor -->
+<header class="fixed top-0 right-0 left-64 bg-white/80 backdrop-blur-md z-50 shadow-sm flex justify-between items-center px-8 py-3">
+<div class="flex items-center space-x-4">
+<span class="font-['Space_Grotesk'] font-bold text-2xl tracking-tighter text-blue-700">Blueprint Lab</span>
+</div>
+<div class="flex items-center space-x-6">
+<div class="relative flex items-center bg-surface-container-low px-4 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 font-body" placeholder="Quick search modules..." type="text"/>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-slate-500 hover:text-blue-600 transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-slate-500 hover:text-blue-600 transition-colors active:scale-95">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant/30" data-alt="Close up portrait of a young male engineering student with a focused and intelligent expression in a bright modern studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6N8AjXGdns3flC2n0DIIvbUxunJPLTshha8YnFO7K4Xy4_B7o1mroSdzQfaI59JIOL5tAIxyhSfWVJBReXt7szapEQ--C_Qd6PuqWNt27UsROcLNTxgRMl96qgpebNh0gebA3z47i0mg43S5EuJbWPbdc-JEqYTqrpoStZOOnfV1ZZJ2WZa5vgslHZ0aj8wW9M6xt8Y8KQJpCslRZCWSvFyGaD8le3fX8XVA9tnwOCxf_188N8GryW1S52213URPPo7g4WLam6do"/>
+</div>
+</div>
+</header>
+<div class="pt-24 pb-12 px-12 max-w-7xl mx-auto space-y-12">
+<!-- Hero Profile Section: Editorial Layout -->
+<section class="flex flex-col md:flex-row items-end gap-10">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<img alt="Alexander Pierce" class="relative w-48 h-48 rounded-full object-cover" data-alt="Professional close-up portrait of a male engineer in a clean white shirt with soft architectural lighting in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKMA6L0l2ZKdaDcCU70N3qxRV0sfZHhDx_3v52Db-JmjguuXAiTWh4Y7kNTQ9-4BHBXv24HoEC_TDpJKnZ9aTftXOt1dkyFt_EObNbRZtHW-jIcD2sUTeg5m3VBDsPD3QW_o-cog3GaucYS3X15WoZMKRwPNjeSKxa1u-Pxkeiw8H6sT74CWQywnVTF8-7Q7WmjQgEbfojF0nvx0jV0Ll9oOjAVIIbSlVN4kA23Qv5vMEexcbhMexaAPtUAr_3kSEZuLFAza9mAlE"/>
+</div>
+<div class="flex-1 space-y-4">
+<div class="flex items-center space-x-3">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary font-bold">Lead Technical Contributor</span>
+<div class="h-[1px] flex-1 bg-outline-variant/15"></div>
+</div>
+<h1 class="font-headline text-5xl font-bold tracking-tighter text-on-surface">Alexander Pierce</h1>
+<div class="flex flex-wrap gap-6 text-on-surface-variant font-body font-medium">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+<span>a.pierce@blueprint.lab</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="fingerprint">fingerprint</span>
+<span>REG-2024-8842</span>
+</div>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="bg-surface-container-high px-6 py-3 rounded-md font-headline text-xs font-bold uppercase tracking-widest text-on-secondary-container hover:bg-surface-container-highest transition-colors active:scale-95">
+                        Edit Profile
+                    </button>
+<button class="bg-blueprint-gradient px-6 py-3 rounded-md font-headline text-xs font-bold uppercase tracking-widest text-white shadow-lg active:scale-95">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="settings">settings</span>
+                        Account Settings
+                    </button>
+</div>
+</section>
+<!-- Bento Grid Stats & Widgets -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Reputation Widget -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="verified">verified</span>
+</div>
+<div class="space-y-1 relative z-10">
+<span class="font-label text-[10px] uppercase tracking-widest text-slate-500 font-bold">Reputation System</span>
+<h3 class="font-headline text-2xl font-bold">Contribution Score</h3>
+</div>
+<div class="py-8 relative z-10">
+<span class="font-headline text-7xl font-bold text-primary tracking-tighter">4,892</span>
+<span class="font-headline text-xl text-secondary ml-2">pts</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded shadow-sm border border-outline-variant/10 relative z-10">
+<span class="material-symbols-outlined text-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="font-headline text-sm font-bold text-on-surface">Verified Mentor</p>
+<p class="text-[10px] text-slate-500 uppercase tracking-tighter">Structural Dynamics Expert</p>
+</div>
+</div>
+</div>
+<!-- Interests Chips Section -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-low rounded-xl p-8 space-y-6">
+<div class="flex justify-between items-center">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase tracking-widest text-slate-500 font-bold">Domain Expertise</span>
+<h3 class="font-headline text-2xl font-bold">Interests &amp; Topics</h3>
+</div>
+<button class="text-primary hover:underline font-label text-xs font-bold uppercase">Browse Topics</button>
+</div>
+<div class="flex flex-wrap gap-3">
+<!-- Chip Item -->
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-body text-sm font-semibold">Aerospace Dynamics</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="architecture">architecture</span>
+<span class="font-body text-sm font-semibold">Civil Engineering</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="bolt">bolt</span>
+<span class="font-body text-sm font-semibold">Renewable Systems</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="memory">memory</span>
+<span class="font-body text-sm font-semibold">Neural Architectures</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="science">science</span>
+<span class="font-body text-sm font-semibold">Material Science</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="tsunami">tsunami</span>
+<span class="font-body text-sm font-semibold">Fluid Mechanics</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-4 py-2.5 rounded-full flex items-center gap-2 hover:border-primary/40 transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="robot_2">robot_2</span>
+<span class="font-body text-sm font-semibold">Mechatronics</span>
+</div>
+</div>
+<div class="bg-surface-container-high/50 p-6 rounded-lg flex items-center justify-between border border-dashed border-outline-variant/40">
+<div class="flex items-center gap-4">
+<div class="bg-white p-3 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+</div>
+<p class="font-body text-sm font-medium text-on-surface-variant">Add more specific research fields to improve recommendations.</p>
+</div>
+<button class="font-headline text-[10px] font-bold uppercase tracking-widest text-primary hover:text-blue-800">Add Tags</button>
+</div>
+</div>
+</div>
+<!-- Recent Contributions & Saved Materials -->
+<section class="space-y-8">
+<div class="flex items-baseline gap-4">
+<h3 class="font-headline text-3xl font-bold tracking-tight">Recent Activity</h3>
+<div class="h-[2px] w-12 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Library Column -->
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-[0.15em] text-slate-500 font-bold">Saved Materials</span>
+<button class="text-primary text-xs font-bold">View Library</button>
+</div>
+<div class="space-y-4">
+<!-- Card Item -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer flex gap-5 group">
+<div class="w-24 h-24 bg-surface-container-low rounded-lg overflow-hidden shrink-0">
+<img alt="Technical Drawing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a complex technical architectural blueprint with white lines on a deep blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_PJAFg_pOVDx_zimlxsvh_01wEWfEF3ls5kDfYI29J_HpqZjRTyEfdyWvy0dxuUrtmRpheiaQDq_J-0ipqtnBOFCrZECnoWpF7w8377wIfrKhL3nJoEiPYC13kV-Bzywqj7GkL3BO9qqH_jMocAwBrRapyAE9CrrQz0BzlD7ZcLtbJzuZXs28eL7XD458PrJ6FigYuGlP0ahVEJU0GhkHaWwJaLsCRdG0P-ul-oRVDAtms6U92VH8OSefko7ZTT8e4BLF2i46jew"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline text-base font-bold text-on-surface group-hover:text-primary transition-colors">Advanced Stress Analysis v2.4</h4>
+<p class="font-body text-xs text-on-surface-variant mt-1">Uploaded by Dr. Aris Thorne • Dec 12, 2023</p>
+<div class="flex items-center gap-3 mt-3">
+<span class="font-label text-[9px] bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-bold">PDF</span>
+<span class="font-label text-[9px] bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-bold">4.2 MB</span>
+</div>
+</div>
+</div>
+<!-- Card Item -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer flex gap-5 group">
+<div class="w-24 h-24 bg-surface-container-low rounded-lg overflow-hidden shrink-0">
+<img alt="Robot Arm" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern industrial robotic arm working on a precise mechanical component in a clean tech facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy5wpeQIU8m1wlxj5QSw4WuOtL1EiM6XSg9y_9MFW0luusg3C-KaQdQMOqiJ8Ht0Lq8fmkYQ7DVuzf_oJ57ijhkiPYNilKOKSrj1thf9CspMcAqphoffdMHSqFyHjCxmQlYJsB9mZQbjPvttI6I3_Uk8m8H8fzTgpTSEF3bBiK5VHd3xt2lZddpOyNbj8SX8s6CjrKfCKUH28GU6KTezlDc4NK-fBS3ulNGBV7soaWK4U3zcCf7sxgALy9AZzMqA_hx4jboazO4Qk"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="font-headline text-base font-bold text-on-surface group-hover:text-primary transition-colors">Kinematic Control Systems</h4>
+<p class="font-body text-xs text-on-surface-variant mt-1">Seminar Series • Nov 28, 2023</p>
+<div class="flex items-center gap-3 mt-3">
+<span class="font-label text-[9px] bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-bold">MP4</span>
+<span class="font-label text-[9px] bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-bold">12:45 MIN</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contributions Column -->
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<span class="font-label text-[11px] uppercase tracking-[0.15em] text-slate-500 font-bold">Recent Contributions</span>
+<button class="text-primary text-xs font-bold">History</button>
+</div>
+<div class="space-y-4">
+<!-- Contribution Item -->
+<div class="bg-surface-container-low p-6 rounded-xl relative group overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-1 bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] text-primary font-extrabold tracking-widest uppercase">Community Answer</span>
+<span class="text-[10px] text-slate-400 font-body">2 days ago</span>
+</div>
+<h4 class="font-headline text-base font-bold mb-2">Resolving Euler-Bernoulli Beam Deviations</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">"The primary issue in the provided schematic relates to the assumption of rigid boundary conditions when the actual support..."</p>
+<div class="flex items-center gap-4 mt-4">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="thumb_up" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+<span class="text-xs font-bold text-secondary">124</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="comment">comment</span>
+<span class="text-xs font-bold text-secondary">12</span>
+</div>
+</div>
+</div>
+<!-- Contribution Item -->
+<div class="bg-surface-container-low p-6 rounded-xl relative group overflow-hidden">
+<div class="absolute left-0 top-0 h-full w-1 bg-primary transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="font-label text-[10px] text-primary font-extrabold tracking-widest uppercase">Module Upload</span>
+<span class="text-[10px] text-slate-400 font-body">1 week ago</span>
+</div>
+<h4 class="font-headline text-base font-bold mb-2">Python Script for Thermal Distribution Analysis</h4>
+<p class="font-body text-sm text-on-surface-variant line-clamp-2">A comprehensive library for mapping 3D heat dissipation in non-uniform semiconductor materials.</p>
+<div class="flex items-center gap-4 mt-4">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="download">download</span>
+<span class="text-xs font-bold text-secondary">512</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-secondary">89</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- FAB for quick upload - Contextual Suppression Check -->
+<!-- Suppressed on Profile page as per UX guidelines -->
+</body></html>
