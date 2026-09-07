@@ -1,0 +1,92 @@
+[
+  {
+    "role": "student",
+    "fullName": "Parth Jaiswal",
+    "username": "Parth_120912",
+    "organization": "MMit",
+    "email": "sjaiswal22ytl@gmail.com",
+    "mobile": "+917020690613",
+    "topics": {
+      "sa": true,
+      "ml": true,
+      "ci": false,
+      "ui": false,
+      "cs": false
+    },
+    "verificationDocumentUrl": "/uploads/verificationFile-1776347735257-658643288.png",
+    "id": "1776347735265556",
+    "createdAt": "2026-04-16T13:55:35.265Z"
+  },
+  {
+    "role": "student",
+    "fullName": "Parth Jaiswal",
+    "username": "Parth_j",
+    "organization": "mmit",
+    "email": "sjaiswal22ytl@gmail.com",
+    "mobile": "+917020690613",
+    "topics": {
+      "sa": true,
+      "ml": false,
+      "ci": false,
+      "ui": true,
+      "cs": true
+    },
+    "verificationDocumentUrl": "/uploads/verificationFile-1776348262241-587791150.png",
+    "id": "1776348262244224",
+    "createdAt": "2026-04-16T14:04:22.244Z"
+  },
+  {
+    "role": "student",
+    "fullName": "Parth Jaiswal",
+    "username": "Parth_123",
+    "organization": "MMIT",
+    "email": "sjaiswal22ytl@gmail.com",
+    "mobile": "+917020690613",
+    "topics": {
+      "sa": true,
+      "ml": true,
+      "ci": true,
+      "ui": false,
+      "cs": false
+    },
+    "verificationDocumentUrl": "/uploads/verificationFile-1776348766755-346002285.jpeg",
+    "id": "1776348766757476",
+    "createdAt": "2026-04-16T14:12:46.757Z"
+  },
+  {
+    "role": "student",
+    "fullName": "Parth Jaiswal",
+    "username": "aadad",
+    "organization": "adad",
+    "email": "sjaiswal22ytl@gmail.com",
+    "mobile": "+917020690613",
+    "topics": {
+      "sa": true,
+      "ml": false,
+      "ci": false,
+      "ui": false,
+      "cs": false
+    },
+    "verificationDocumentUrl": "/uploads/verificationFile-1776349164450-152176575.png",
+    "id": "177634916445125",
+    "createdAt": "2026-04-16T14:19:24.451Z"
+  },
+  {
+    "role": "student",
+    "fullName": "234",
+    "username": "234",
+    "organization": "345",
+    "email": "2345",
+    "mobile": "2345",
+    "topics": {
+      "sa": true,
+      "ml": true,
+      "ci": false,
+      "ui": false,
+      "cs": true
+    },
+    "verificationDocumentUrl": "/uploads/verificationFile-1776356683962-467811423.png",
+    "id": "1776356683984426",
+    "createdAt": "2026-04-16T16:24:43.984Z"
+  }
+]

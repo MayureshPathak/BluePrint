@@ -1,0 +1,38 @@
+[
+  {
+    "topicName": "Data Science",
+    "unitNumber": "Unit 1",
+    "year": "Second Year",
+    "departmentId": "1",
+    "uploaderEmail": "sjaiswal22ytl@gmail.com",
+    "filename": "file-1776356197965-272004566.pdf",
+    "originalName": "Assignement 3 - DSL - Programs and Outputs.pdf",
+    "filePath": "/uploads/file-1776356197965-272004566.pdf",
+    "id": "1776356197968261",
+    "createdAt": "2026-04-16T16:16:37.968Z"
+  },
+  {
+    "topicName": "AI",
+    "unitNumber": "UNIT 2",
+    "year": "Third Year",
+    "departmentId": "3",
+    "uploaderEmail": "sjaiswal22ytl@gmail.com",
+    "filename": "file-1776356252025-158250950.pdf",
+    "originalName": "Assignment 6 - Programs and OutputsProgram.pdf",
+    "filePath": "/uploads/file-1776356252025-158250950.pdf",
+    "id": "1776356252030885",
+    "createdAt": "2026-04-16T16:17:32.030Z"
+  },
+  {
+    "topicName": "DS",
+    "unitNumber": "UNIT 2",
+    "year": "Second Year",
+    "departmentId": "1",
+    "uploaderEmail": "julian@vane.tech",
+    "filename": "file-1776358539654-744733395.pdf",
+    "originalName": "Assignement 3 - DSL - Programs and Outputs.pdf",
+    "filePath": "/uploads/file-1776358539654-744733395.pdf",
+    "id": "1776358539657100",
+    "createdAt": "2026-04-16T16:55:39.657Z"
+  }
+]
