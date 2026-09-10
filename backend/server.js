@@ -10,12 +10,16 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+// Middleware — allow any local-network origin so LAN IP changes don't break access
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://10.240.230.230:5173',
-  ],
+  origin: (origin, callback) => {
+    // Allow requests with no origin (curl, mobile apps) or from localhost / LAN
+    if (!origin || /^http:\/\/(localhost|127\.0\.0\.1|10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+)(:\d+)?$/.test(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 app.use(express.json());
@@ -51,6 +55,6 @@ app.get('/', (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is listening on port ${PORT} (all interfaces)`);
 });
